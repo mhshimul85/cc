@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="loan">
+        <input
+          class="loan_amount"
+          name="loan_amount"
+          type="number"
+          min="0"
+          placeholder="Loan Amount"
+          value="100000"
+        />
+        <input
+          class="loan_interest_rate"
+          name="loan_interest_rate"
+          type="number"
+          min="0"
+          placeholder="Interest Rate %"
+          value="5"
+        />
+        <input
+          class="loan_processing_fee"
+          name="loan_processing_fee"
+          type="number"
+          min="0"
+          placeholder="Processing Fee"
+        />
+      </div>
+      <div>
+        <span class="add"> (ADD) </span
+        ><span class="final_amount"> (Final Amount) </span>
+      </div>
+      <div class="payments">
+        <p>
+          <input
+            class="payments_installment_days_after"
+            name="payments_installment_days_after"
+            type="number"
+            min="0"
+            placeholder="Days After"
+            value="15"
+          />
+          <input
+            class="payments_installment_amount"
+            name="payments_installment_amount"
+            type="number"
+            min="0"
+            placeholder="Amount"
+          />
+        </p>
+      </div>
+      <h2 class="result">Output</h2>
+      <div class="details"></div>
+    </div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
