@@ -98,7 +98,9 @@ $(document).ready(function () {
 
   $(".final_amount").click(function () {
     data();
-    __loan_amount = loan_amount;
+    if (paymentsLength == 1) {
+      __loan_amount = loan_amount;
+    }
 
     let days_after =
       $(`.payments > p:nth-child(${paymentsLength})`)
